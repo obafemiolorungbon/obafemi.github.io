@@ -12,15 +12,17 @@ const loadBlogPosts = () => {
     const blogGrid = document.getElementById('blogPosts');
     
     if (blogPosts.length === 0) {
+        blogGrid.innerHTML = '<p class="empty-state">Coming soon... Blog posts will appear here.</p>';
         return;
     }
 
     blogGrid.innerHTML = '';
     
-    blogPosts.forEach(post => {
+    blogPosts.forEach((post, index) => {
         const card = document.createElement('a');
         card.href = post.link;
         card.className = 'blog-card';
+        card.style.animationDelay = `${(index + 1) * 0.15}s`;
         
         const date = new Date(post.date);
         const formattedDate = date.toLocaleDateString('en-US', { 

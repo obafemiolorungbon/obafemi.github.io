@@ -1,11 +1,10 @@
 const blogPosts = [
-    // Add your blog posts here
-    // {
-    //     title: "Blog Post Title",
-    //     date: "2024-01-15",
-    //     excerpt: "A brief description of the blog post...",
-    //     link: "posts/post-name.html"
-    // }
+    {
+        title: "Solving Boolean Hell: A State Machine Approach",
+        date: "2026-01-09",
+        excerpt: "Exploring the power of state machines for managing complex form validation. A deep dive into XState vs traditional React state management, and why declarative state machines can eliminate boolean hell while improving maintainability and developer experience.",
+        link: "posts/state-machines-vs-react-state.html"
+    }
 ];
 
 const loadBlogPosts = () => {

@@ -157,45 +157,56 @@
 }
 
 .post-content code {
-    font-family: 'Courier New', 'Monaco', 'Consolas', monospace;
+    font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Consolas', 'Courier New', monospace;
     font-size: 0.9em;
     background: var(--color-surface);
     padding: 0.25em 0.5em;
-    border-radius: 6px;
+    border-radius: 4px;
     border: 1px solid var(--color-border);
     color: var(--color-accent-hover);
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .post-content pre {
     background: var(--color-surface);
-    padding: 2rem;
-    border-radius: 12px;
+    padding: 1.5rem;
+    border-radius: 8px;
     overflow-x: auto;
     margin: 2rem 0;
     border: 1px solid var(--color-border);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-    position: relative;
-}
-
-.post-content pre::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    background: linear-gradient(180deg, var(--color-accent), var(--color-accent-hover));
-    border-radius: 12px 0 0 12px;
 }
 
 .post-content pre code {
+    font-family: 'JetBrains Mono', 'Fira Code', 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', 'Consolas', 'Courier New', monospace;
+    display: block;
     background: none;
     padding: 0;
     border: none;
     color: var(--color-text);
     font-weight: 400;
+    font-size: 0.9em;
+    line-height: 1.8;
+    white-space: pre;
 }
+
+.post-content pre code::-webkit-scrollbar {
+    height: 6px;
+}
+
+.post-content pre code::-webkit-scrollbar-track {
+    background: var(--color-bg-secondary);
+    border-radius: 3px;
+}
+
+.post-content pre code::-webkit-scrollbar-thumb {
+    background: var(--color-border-hover);
+    border-radius: 3px;
+}
+
+.post-content pre code::-webkit-scrollbar-thumb:hover {
+    background: var(--color-accent);
+}
+
 
 .post-content ul,
 .post-content ol {
@@ -312,5 +323,20 @@
 
     .post-content h2 {
         margin-top: 3rem;
+    }
+
+    .post-content pre {
+        padding: 1.25rem;
+        margin: 1.5rem 0;
+    }
+
+    .post-content pre code {
+        font-size: 0.85em;
+        line-height: 1.7;
+    }
+
+    .post-content code {
+        font-size: 0.85em;
+        padding: 0.2em 0.4em;
     }
 }

@@ -1,6 +1,6 @@
 const blogPosts = [
     {
-        title: "Solving Boolean Hell: A State Machine Approach",
+        title: "Solving Boolean Hell: A State Machine Approach. Part 1",
         date: "2026-01-09",
         excerpt: "Exploring the power of state machines for managing complex form validation. A deep dive into XState vs traditional React state management, and why declarative state machines can eliminate boolean hell while improving maintainability and developer experience.",
         link: "posts/state-machines-vs-react-state.html"
